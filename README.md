@@ -52,3 +52,18 @@ export default tseslint.config({
   },
 })
 ```
+``` CREATE DATABASE loja;
+USE loja;
+
+CREATE TABLE produtos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  preco DECIMAL(10,2) NOT NULL,
+  categoria VARCHAR(100) NOT NULL
+);
+
+INSERT INTO produtos (id,nome, preco, categoria) VALUES
+  (01,'Notebook Dell', 4200.00, 'Informática'),
+  (02,'Teclado Mecânico', 350.00, 'Periféricos');
+  
+  drop database loja; ```
